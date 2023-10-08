@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "3a6d0dd0-1054-4d29-8369-9ecb02160b33",
+		"name": "inheritance-jpa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createResolution",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Test résolution\",\r\n    \"transport\": \"IT-TEST\",\r\n    \"cost\": 500,\r\n    \"userName\": \"Darvin\",\r\n    \"comment\": \"Test commentaire\",\r\n    \"orl\": \"OR1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/resolutions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"resolutions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllResolutions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Test résolution\",\r\n    \"resolutionName\": 1,\r\n    \"resolutionType\": 1,\r\n    \"transport\": \"IT-TEST\",\r\n    \"cost\": 500,\r\n    \"userName\": \"Darvin\",\r\n    \"comment\": \"Test commentaire\",\r\n    \"orl\": \"OR1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/resolutions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"resolutions"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
